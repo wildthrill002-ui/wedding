@@ -108,6 +108,7 @@ function renderContent(){
 function setupSmoothScroll(){
   if(typeof Lenis === 'undefined') return;
   const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+  window.__lenis = lenis;
   function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
   requestAnimationFrame(raf);
 }
