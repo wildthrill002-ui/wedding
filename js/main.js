@@ -226,7 +226,7 @@ function setupIntroGate(){
       gate.remove();
       document.body.style.overflow = '';
       setupHeroEntrance();
-    }, 650);
+    }, 950);
   }, { once: true });
 }
 
