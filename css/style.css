@@ -63,7 +63,6 @@
   .wax-seal.breaking{transform:rotate(-4deg)}
 }
 
-.script-name{font-family:'Parisienne',cursive;font-weight:400;font-size:1.12em}
 html{scroll-behavior:smooth;color-scheme:only light}
 html.lenis{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto}
@@ -110,12 +109,6 @@ img{max-width:100%}
   animation:bob 6s ease-in-out infinite;
 }
 .cat-hero img{width:100%;display:block;filter:drop-shadow(0 16px 20px rgba(51,41,31,.32))}
-.cat-hero.arch{
-  overflow:hidden;border-radius:50% 50% 0 0/22% 22% 0 0;
-  box-shadow:0 22px 44px -18px rgba(51,41,31,.45);
-  border:1px solid var(--champagne);
-}
-.cat-hero.arch img{filter:none;aspect-ratio:563/900;object-fit:cover}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .cat-caption{
   margin-top:16px;font-family:'Cormorant Garamond',serif;font-style:italic;

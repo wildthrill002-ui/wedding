@@ -12,7 +12,7 @@ function renderContent(){
   text('gate-hint', S.gate.hint);
 
   text('hero-eyebrow', S.hero.eyebrow);
-  html('hero-names', `<span class="script-name">${S.hero.groom}</span> <span class="amp">${S.hero.amp}</span> <span class="script-name">${S.hero.bride}</span>`);
+  html('hero-names', `${S.hero.groom} <span class="amp">${S.hero.amp}</span> ${S.hero.bride}`);
   text('hero-date', `${S.hero.date} · ${S.hero.weekday}`);
   text('hero-place', S.hero.place);
   html('hero-cat-caption', S.hero.catCaption);
