@@ -66,8 +66,12 @@ const SITE = {
       "улица Рябиновка, 1, деревня Филипповское,",
       "городской округ Чехов, Московская область"
     ],
-    note: "нажмите, чтобы открыть навигатор ↑",
-    mapLink: "https://yandex.ru/navi/?whatshere%5Bzoom%5D=18&whatshere%5Bpoint%5D=37.268846%2C55.144536&lang=ru&from=navi"
+    photo: "images/venue.webp",
+    photoAlt: "Место проведения — площадка на воде",
+    routeLabel: "Построить маршрут",
+    taxiLabel: "Вызвать такси",
+    routeLink: "https://yandex.ru/maps/?rtext=~55.144536,37.268846&rtt=auto",
+    taxiLink: "https://yandex.ru/maps/?rtext=~55.144536,37.268846&rtt=taxi"
   },
 
   gallery: {

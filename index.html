@@ -106,11 +106,17 @@
   <div class="wrap reveal loc">
     <div class="rule"></div>
     <p class="eyebrow" id="loc-eyebrow"></p>
-    <p class="big" id="loc-venue"></p>
-    <a class="addr-link" id="loc-addr-link" target="_blank" rel="noopener">
-      <p class="addr" id="loc-addr"></p>
-      <p class="addr-note" id="loc-note"></p>
-    </a>
+    <div class="loc-photo">
+      <img id="loc-photo-img" alt="" loading="lazy" decoding="async">
+      <div class="loc-overlay">
+        <p class="loc-venue" id="loc-venue"></p>
+        <p class="loc-addr" id="loc-addr"></p>
+        <div class="loc-actions">
+          <a class="loc-btn" id="loc-route-link" target="_blank" rel="noopener"></a>
+          <a class="loc-btn" id="loc-taxi-link" target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -56,9 +56,16 @@ function renderContent(){
 
   text('loc-eyebrow', S.location.eyebrow);
   text('loc-venue', S.location.venue);
-  document.getElementById('loc-addr-link').href = S.location.mapLink;
   document.getElementById('loc-addr').textContent = S.location.addressLines.join('\n');
-  text('loc-note', S.location.note);
+  const locImg = document.getElementById('loc-photo-img');
+  locImg.src = S.location.photo;
+  locImg.alt = S.location.photoAlt;
+  const routeLink = document.getElementById('loc-route-link');
+  routeLink.href = S.location.routeLink;
+  routeLink.textContent = S.location.routeLabel;
+  const taxiLink = document.getElementById('loc-taxi-link');
+  taxiLink.href = S.location.taxiLink;
+  taxiLink.textContent = S.location.taxiLabel;
 
   text('rsvp-title', S.rsvp.title);
   text('rsvp-sub', S.rsvp.sub);

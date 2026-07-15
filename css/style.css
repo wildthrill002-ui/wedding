@@ -130,11 +130,26 @@ section{padding:74px 0}
 
 /* ---------- location ---------- */
 .loc{text-align:center}
-.loc .big{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,11vw,80px);font-weight:500;line-height:1}
-.addr-link{display:block;text-decoration:none;color:inherit;border-radius:16px;padding:14px 12px;transition:background .2s}
-.addr-link:hover{background:var(--sand-lo)}
-.loc .addr{color:var(--taupe);margin-top:14px;font-size:16px;letter-spacing:.02em;white-space:pre-line}
-.loc .addr-note{color:var(--sky);margin-top:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.loc-photo{
+  position:relative;border-radius:20px;overflow:hidden;max-width:520px;margin:0 auto;
+  box-shadow:0 24px 50px -28px rgba(51,41,31,.5);
+}
+.loc-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.loc-overlay{
+  position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
+  align-items:center;text-align:center;padding:32px 24px;color:var(--sand);
+  background:linear-gradient(to bottom,rgba(51,41,31,0) 40%,rgba(30,23,16,.55) 70%,rgba(20,15,10,.85) 100%);
+}
+.loc-venue{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,6vw,40px);font-weight:500;line-height:1.1}
+.loc-addr{margin-top:10px;font-size:14px;letter-spacing:.02em;color:var(--champagne);white-space:pre-line}
+.loc-actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;justify-content:center}
+.loc-btn{
+  display:inline-block;padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(4px);color:var(--sand);
+  text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  transition:background .2s;
+}
+.loc-btn:hover{background:rgba(255,255,255,.22)}
 
 /* ---------- RSVP form ---------- */
 .rsvp{background:var(--sand-lo);border-radius:22px;padding:52px 30px;margin-top:8px}
