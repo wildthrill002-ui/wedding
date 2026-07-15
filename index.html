@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Артём & Анна — 30 августа 2026</title>
+<meta name="description" content="Свадьба Артёма и Анны · 30 августа 2026 · Чехов, Московская область">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <p class="eyebrow" id="hero-eyebrow"></p>
+  <h1 class="names" id="hero-names"></h1>
+  <p class="hero-date" id="hero-date"></p>
+  <p class="hero-place" id="hero-place"></p>
+  <div class="cat-hero"><img src="images/hero-cat.png" alt="Симба" width="563" height="900" loading="eager" decoding="async"></div>
+  <p class="cat-caption" id="hero-cat-caption"></p>
+  <p class="scroll-hint" id="hero-scroll-hint"></p>
+</header>
+
+<!-- INTRO -->
+<section>
+  <div class="wrap reveal">
+    <div class="rule"></div>
+    <p class="lead" id="intro-lead"></p>
+    <div class="meow">
+      <b id="intro-meow-label"></b>
+      <span id="intro-meow"></span>
+    </div>
+  </div>
+</section>
+
+<!-- STORY / GALLERY -->
+<section class="gallery-section">
+  <div class="wrap reveal">
+    <div class="rule"></div>
+    <h2 class="sec-title" id="gallery-title"></h2>
+    <p class="sec-sub" id="gallery-sub"></p>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section>
+  <div class="wrap reveal">
+    <div class="dress">
+      <div class="rule"></div>
+      <p class="eyebrow" style="color:var(--gold)" id="dress-eyebrow"></p>
+      <p class="dress-code" id="dress-code"></p>
+      <p class="dress-note" id="dress-note"></p>
+      <div class="dress-cols">
+        <div class="dcol">
+          <h4 id="dress-men-title"></h4>
+          <p id="dress-men-text"></p>
+        </div>
+        <div class="dcol">
+          <h4 id="dress-women-title"></h4>
+          <p id="dress-women-text"></p>
+        </div>
+      </div>
+      <div class="swatches" id="dress-swatches" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GIFTS -->
+<section class="gifts">
+  <div class="wrap reveal">
+    <div class="rule"></div>
+    <h2 class="sec-title" id="gifts-title"></h2>
+    <p class="sec-sub" id="gifts-sub"></p>
+    <p class="lead" id="gifts-lead"></p>
+    <div class="meow">
+      <b id="gifts-meow-label"></b>
+      <span id="gifts-meow"></span>
+    </div>
+    <p class="lead" style="margin-top:30px" id="gifts-lead2"></p>
+    <div class="pay">
+      <div class="pay-card">
+        <div class="k" id="gifts-btc-label"></div>
+        <div class="v" style="font-size:16px;letter-spacing:.01em" id="gifts-btc-address"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <div class="wrap reveal">
+    <div class="rule"></div>
+    <h2 class="sec-title" id="timeline-title"></h2>
+    <p class="sec-sub" id="timeline-sub"></p>
+    <div class="timeline" id="timeline-list"></div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section>
+  <div class="wrap reveal loc">
+    <div class="rule"></div>
+    <p class="eyebrow" id="loc-eyebrow"></p>
+    <p class="big" id="loc-venue"></p>
+    <a class="addr-link" id="loc-addr-link" target="_blank" rel="noopener">
+      <p class="addr" id="loc-addr"></p>
+      <p class="addr-note" id="loc-note"></p>
+    </a>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section>
+  <div class="wrap reveal">
+    <div class="rsvp">
+      <div class="rule"></div>
+      <h2 class="sec-title" id="rsvp-title"></h2>
+      <p class="sec-sub" id="rsvp-sub"></p>
+
+      <form id="rsvpForm">
+        <div class="field">
+          <label for="name" id="l-name"></label>
+          <input type="text" id="name" name="ФИО" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="phone" id="l-phone"></label>
+          <input type="tel" id="phone" name="Телефон" required autocomplete="tel" placeholder="+7 900 000-00-00">
+        </div>
+
+        <div class="field">
+          <label for="social" id="l-social"></label>
+          <input type="text" id="social" name="Соцсети" placeholder="@ник или ссылка">
+        </div>
+
+        <div class="field">
+          <label id="l-attending"></label>
+          <div class="opts">
+            <span class="opt"><input type="radio" id="go-yes" name="Присутствие" value="Буду" required><label for="go-yes" id="l-attending-yes"></label></span>
+            <span class="opt"><input type="radio" id="go-no" name="Присутствие" value="Не смогу"><label for="go-no" id="l-attending-no"></label></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="guests" id="l-guests"></label>
+          <select id="guests" name="Количество гостей"></select>
+        </div>
+
+        <div class="field">
+          <label id="l-transfer-to"></label>
+          <div class="opts">
+            <span class="opt"><input type="radio" id="tto-yes" name="Трансфер туда" value="Да" required><label for="tto-yes" id="l-yes-1"></label></span>
+            <span class="opt"><input type="radio" id="tto-no" name="Трансфер туда" value="Нет"><label for="tto-no" id="l-no-1"></label></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label id="l-transfer-back"></label>
+          <div class="opts">
+            <span class="opt"><input type="radio" id="ttb-yes" name="Трансфер обратно" value="Да" required><label for="ttb-yes" id="l-yes-2"></label></span>
+            <span class="opt"><input type="radio" id="ttb-no" name="Трансфер обратно" value="Нет"><label for="ttb-no" id="l-no-2"></label></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label id="l-cottage"></label>
+          <div class="opts">
+            <span class="opt"><input type="radio" id="cot-yes" name="Коттедж" value="Да" required><label for="cot-yes" id="l-yes-3"></label></span>
+            <span class="opt"><input type="radio" id="cot-no" name="Коттедж" value="Нет"><label for="cot-no" id="l-no-3"></label></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label id="l-alcohol"></label>
+          <div class="opts" id="alcohol-opts"></div>
+        </div>
+
+        <div class="field">
+          <label for="food" id="l-food"></label>
+          <input type="text" id="food" name="Еда">
+        </div>
+
+        <div class="field">
+          <label for="wish" id="l-wish"></label>
+          <textarea id="wish" name="Пожелание"></textarea>
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn"></button>
+        <p class="form-note" id="rsvp-note"></p>
+        <p class="err" id="errMsg"></p>
+      </form>
+
+      <div class="success" id="successBox">
+        <div class="em" id="success-emoji"></div>
+        <h3 id="success-title"></h3>
+        <p id="success-text"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-cat"><img src="images/footer-cat.png" alt="Симба" width="330" height="900" loading="lazy" decoding="async"></div>
+  <p class="footer-names" id="footer-names"></p>
+  <p class="footer-sig" id="footer-sig"></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+<script src="js/content.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
