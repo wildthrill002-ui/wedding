@@ -9,8 +9,10 @@ function renderContent(){
   const S = SITE;
   document.title = S.meta.title;
 
+  text('gate-hint', S.gate.hint);
+
   text('hero-eyebrow', S.hero.eyebrow);
-  html('hero-names', `${S.hero.groom} <span class="amp">${S.hero.amp}</span> ${S.hero.bride}`);
+  html('hero-names', `<span class="script-name">${S.hero.groom}</span> <span class="amp">${S.hero.amp}</span> <span class="script-name">${S.hero.bride}</span>`);
   text('hero-date', `${S.hero.date} · ${S.hero.weekday}`);
   text('hero-place', S.hero.place);
   html('hero-cat-caption', S.hero.catCaption);
@@ -209,8 +211,27 @@ function setupForm(){
   });
 }
 
+// ---------- intro gate (wax seal opening ritual) ----------
+function setupIntroGate(){
+  const gate = document.getElementById('introGate');
+  const seal = document.getElementById('waxSeal');
+  if(!gate || !seal){ setupHeroEntrance(); return; }
+
+  document.body.style.overflow = 'hidden';
+
+  seal.addEventListener('click', () => {
+    seal.classList.add('breaking');
+    gate.classList.add('closing');
+    setTimeout(() => {
+      gate.remove();
+      document.body.style.overflow = '';
+      setupHeroEntrance();
+    }, 650);
+  }, { once: true });
+}
+
 renderContent();
 setupSmoothScroll();
 setupReveal();
-setupHeroEntrance();
 setupForm();
+setupIntroGate();
