@@ -82,9 +82,7 @@ const SITE = {
     title: "Мы",
     sub: "Несколько кадров — остальные покажем на свадьбе",
     images: [
-      { src: "images/hero-cat.png", alt: "Симба, директор торжества" },
-      { src: "images/gifts-cat.jpg", alt: "Симба на диване" },
-      { src: "images/footer-cat.png", alt: "Симба провожает гостей" }
+      { src: "images/us.webp", alt: "Артём и Анна" }
     ]
   },
 
