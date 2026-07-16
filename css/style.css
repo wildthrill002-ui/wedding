@@ -108,7 +108,7 @@ img{max-width:100%}
   margin-top:40px;width:min(340px,82vw);
   animation:bob 6s ease-in-out infinite;
 }
-.cat-hero img{width:100%;display:block}
+.cat-hero img{width:100%;height:auto;display:block}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .cat-caption{
   margin-top:16px;font-family:'Cormorant Garamond',serif;font-style:italic;
