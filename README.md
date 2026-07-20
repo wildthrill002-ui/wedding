@@ -9,7 +9,7 @@ wedding-site/
 ├── js/
 │   ├── content.js        ← ВСЕ тексты сайта (даты, адрес, таймлайн, подписи формы)
 │   └── main.js            ← рендер, анимации (GSAP/Lenis), отправка RSVP
-├── images/                 ← фото (сейчас — 3 плейсхолдера с котом Симбой)
+├── images/                 ← фото сайта
 ├── google-apps-script/
 │   └── Code.gs             ← код для Google Apps Script (приём формы → Google Таблица)
 └── README.md
@@ -87,17 +87,22 @@ const GAS_ENDPOINT = "ВАШ_WEB_APP_URL";
 deployments → значок карандаша у существующего деплоя → **New version**
 → Deploy. URL при этом остаётся прежним.
 
-## 5. Деплой на GitHub Pages
+## 5. Деплой на Netlify
 
-1. Создай новый репозиторий на GitHub (можно назвать `wedding` или
-   `nasha-svadba`).
-2. Загрузи в него всё содержимое папки `wedding-site/` (через
-   `git init`, `git add .`, `git commit`, `git push`, или через
-   веб-интерфейс GitHub — «Add file → Upload files»).
-3. В репозитории: **Settings → Pages**.
-4. **Source**: `Deploy from a branch`, ветка `main`, папка `/ (root)`.
-5. Сохрани. Через минуту-две сайт будет доступен по адресу вида
-   `https://твой-логин.github.io/название-репозитория/`.
+Сайт живёт на Netlify: **https://unique-eclair-044b73.netlify.app**
+
+Обновить сайт после любых правок:
+
+1. Установи Netlify CLI (один раз): `npm install -g netlify-cli`
+   (или используй `npx netlify-cli` без установки).
+2. Один раз войди в аккаунт: `netlify login` — откроется браузер для
+   подтверждения.
+3. Из папки проекта выполни: `netlify deploy --prod --dir=.`
+4. Через несколько секунд появится строка «Deploy is live!» и та же
+   ссылка — сайт обновлён.
+
+Проект уже привязан к сайту на Netlify (файл `.netlify/state.json`,
+он не в Git — это локальная настройка).
 
 ## 6. Производительность
 
