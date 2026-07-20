@@ -257,10 +257,13 @@ form{max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 
 /* ---------- footer ---------- */
 footer{text-align:center;padding:60px 24px 70px;color:var(--taupe)}
-.footer-cat{width:min(260px,64vw);margin:0 auto 20px}
-.footer-cat img{width:100%;display:block;filter:drop-shadow(0 14px 18px rgba(51,41,31,.3))}
 .footer-names{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--espresso);font-weight:500}
 .footer-sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;margin-top:6px}
+.footer-wine{width:min(78vw,430px);margin:0 0 24px 40vw}
+.footer-wine img{width:100%;height:auto;display:block}
+@media(min-width:700px){
+  .footer-wine{margin-left:min(40vw,520px)}
+}
 
 /* ---------- reveal ---------- */
 .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
