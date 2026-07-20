@@ -82,7 +82,9 @@ const SITE = {
     title: "Мы",
     sub: "Несколько кадров — остальные покажем на свадьбе",
     images: [
-      { src: "images/us.webp", alt: "Артём и Анна" }
+      { src: "images/us-beach.webp", alt: "Артём и Анна на набережной" },
+      { src: "images/us-car.webp", alt: "Артём и Анна в машине" },
+      { src: "images/us-mirror.webp", alt: "Артём и Анна" }
     ]
   },
 

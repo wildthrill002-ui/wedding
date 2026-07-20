@@ -25,8 +25,8 @@ function renderContent(){
   text('gallery-title', S.gallery.title);
   text('gallery-sub', S.gallery.sub);
   const grid = document.getElementById('gallery-grid');
-  grid.innerHTML = S.gallery.images.map(img =>
-    `<figure><img src="${img.src}" alt="${img.alt}" loading="lazy" decoding="async"></figure>`
+  grid.innerHTML = S.gallery.images.map((img, i) =>
+    `<figure class="polaroid p${i + 1}"><img src="${img.src}" alt="${img.alt}" loading="lazy" decoding="async"></figure>`
   ).join('');
 
   text('dress-eyebrow', S.dress.eyebrow);
