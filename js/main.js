@@ -38,6 +38,11 @@ function renderContent(){
   text('dress-women-text', S.dress.women.text);
   document.getElementById('dress-swatches').innerHTML =
     S.dress.swatches.map(c => `<span class="sw" style="background:${c}"></span>`).join('');
+  text('dress-examples-label', S.dress.examplesLabel);
+  document.getElementById('dress-examples').innerHTML =
+    S.dress.examples.map(img =>
+      `<img src="${img.src}" alt="${img.alt}" loading="lazy" decoding="async">`
+    ).join('');
 
   text('gifts-title', S.gifts.title);
   text('gifts-sub', S.gifts.sub);

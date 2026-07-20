@@ -171,6 +171,17 @@ section{padding:74px 0}
 .dcol p{color:var(--sand);font-size:14px;line-height:1.6}
 .swatches{display:flex;gap:8px;justify-content:center;margin-top:30px}
 .sw{width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.18)}
+.dress-examples-label{
+  text-align:center;margin-top:34px;font-size:12px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--taupe);font-weight:600;
+}
+.dress-examples{
+  display:flex;flex-direction:column;gap:14px;max-width:420px;margin:16px auto 0;
+}
+.dress-examples img{
+  width:100%;display:block;border-radius:14px;
+  box-shadow:0 16px 32px -20px rgba(51,41,31,.4);
+}
 
 /* ---------- gifts ---------- */
 .pay{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
