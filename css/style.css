@@ -183,12 +183,6 @@ section{padding:74px 0}
   box-shadow:0 16px 32px -20px rgba(51,41,31,.4);
 }
 
-/* ---------- gifts ---------- */
-.pay{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
-.pay-card{background:var(--sand-lo);border:1px solid var(--champagne);border-radius:14px;
-  padding:22px 26px;min-width:210px;text-align:center}
-.pay-card .k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe);font-weight:600;margin-bottom:8px}
-.pay-card .v{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--espresso);word-break:break-word}
 
 /* ---------- timeline ---------- */
 .timeline{max-width:520px;margin:0 auto}

@@ -50,8 +50,7 @@ function renderContent(){
   text('gifts-meow-label', S.gifts.meowLabel);
   text('gifts-meow', S.gifts.meow);
   html('gifts-lead2', S.gifts.lead2);
-  text('gifts-btc-label', S.gifts.btcLabel);
-  text('gifts-btc-address', S.gifts.btcAddress);
+  html('gifts-flowers-note', S.gifts.flowersNote);
 
   text('timeline-title', S.timeline.title);
   text('timeline-sub', S.timeline.sub);
